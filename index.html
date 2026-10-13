@@ -1,0 +1,1428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light, Going Up — Medhansh Negi, 9D</title>
+<meta name="description" content="Photography portfolio by Medhansh Negi, class 9D: 93 photographs from four days in the mountains, 4–7 October 2026.">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{
+  --paper:#F4EDDC; --paper2:#EADFC6; --cream:#FBF7EC;
+  --ink:#1C2742; --ink2:#4A5470; --navy:#16213D;
+  --sun:#F2A93B; --sun-d:#B9740C; --ember:#DE5529; --sky:#4F8FC6; --sky-d:#2F6A9E; --pine:#2E5E4E;
+  --serif:"Young Serif", Georgia, "Times New Roman", serif;
+  --sans:"Karla", "Trebuchet MS", system-ui, sans-serif;
+  --accent:var(--sun-d);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px;overflow-x:hidden}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.05rem/1.55 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{max-width:100%}
+a{color:inherit}
+.wrap{width:min(1180px,100% - 2*clamp(16px,4vw,40px));margin-inline:auto}
+
+/* ---------- top bar ---------- */
+.bar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:2px solid var(--ink)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:52px;gap:1rem}
+.bar .who{font:700 .8rem var(--sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+.bar nav{display:flex;gap:.15rem;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+.bar nav a{font:700 .78rem var(--sans);letter-spacing:.06em;text-decoration:none;padding:.35rem .55rem;border-radius:2px}
+.bar nav a:hover,.bar nav a:focus-visible{background:var(--ink);color:var(--paper);outline:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:clamp(2.5rem,6vw,5rem) 0 clamp(4rem,8vw,7rem);isolation:isolate}
+.hero::before{content:"";position:absolute;z-index:-1;right:-6%;top:-90px;width:min(560px,60vw);aspect-ratio:1;border-radius:50%;background:var(--sun)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(1.5rem,4vw,4rem);align-items:end}
+.kicker{font:700 .82rem var(--sans);letter-spacing:.16em;text-transform:uppercase;margin:0 0 1.4rem}
+h1{font:400 clamp(3.4rem,9.5vw,8.2rem)/.92 var(--serif);margin:0 0 1.6rem;letter-spacing:-.015em}
+h1 .mark{position:relative;display:inline-block;z-index:0;white-space:nowrap}
+h1 .mark::before{content:"";position:absolute;z-index:-1;left:-.08em;right:-.1em;top:.2em;bottom:.02em;background:var(--sun);transform:rotate(-1.6deg)}
+.sub{font-size:clamp(1.1rem,1.8vw,1.35rem);max-width:30ch;margin:0 0 2rem}
+.id{display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;font-weight:700}
+.id span{border-top:2px solid var(--ink);padding-top:.45rem}
+.prints{position:relative;aspect-ratio:1/1.02;min-height:340px}
+.print{position:absolute;margin:0;padding:8px 8px 8px;background:var(--cream);box-shadow:0 14px 28px -10px rgba(22,33,61,.4);transform:rotate(var(--r));animation:settle .8s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--d)}
+.print img{display:block;width:100%;height:auto}
+.print.a{--r:3deg;--d:.05s;right:0;top:2%;width:84%}
+.print.b{--r:-6deg;--d:.2s;left:0;bottom:2%;width:56%}
+.print.c{--r:8deg;--d:.35s;right:3%;bottom:-3%;width:34%}
+.print::after{content:"";position:absolute;top:-12px;left:50%;width:70px;height:22px;margin-left:-35px;background:rgba(242,169,59,.78);transform:rotate(-3deg)}
+.print.b::after{left:30%;background:rgba(79,143,198,.7);transform:rotate(5deg)}
+.print.c::after{display:none}
+@keyframes settle{from{opacity:0;transform:translateY(22px) rotate(calc(var(--r) - 4deg))}to{opacity:1;transform:rotate(var(--r))}}
+
+/* ---------- statement ---------- */
+.statement{padding:clamp(3rem,6vw,5rem) 0;background:var(--ink);color:var(--paper);position:relative}
+.statement::before,.ruler-sec::before{content:"";position:absolute;left:0;right:0;top:-34px;height:120px;background:inherit;transform:skewY(-1.6deg);transform-origin:left top}
+.statement .wrap{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.6fr);gap:clamp(1.5rem,5vw,5rem)}
+.label{font:700 .8rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--sun)}
+.statement p{margin:0 0 1rem;font-size:clamp(1.2rem,2.2vw,1.65rem);line-height:1.4;max-width:34em}
+.statement p b{color:var(--sun);font-weight:700}
+
+/* ---------- ruler ---------- */
+.ruler-sec{position:relative;background:var(--paper2);padding:clamp(3.5rem,6vw,5.5rem) 0 clamp(3rem,5vw,4.5rem)}
+.ruler-sec h2{font:400 clamp(1.9rem,4vw,3rem)/1.05 var(--serif);margin:.4rem 0 1rem;max-width:16ch;transform:rotate(-1deg);transform-origin:left}
+.ruler-sec .lede{max-width:46ch;margin:0 0 1.6rem}
+#ruler{width:100%;height:auto;display:block;overflow:visible}
+#ruler text{font:700 11px var(--sans);fill:var(--ink2);letter-spacing:.05em}
+#ruler .dot{cursor:pointer;stroke:var(--ink);stroke-width:1.2}
+#ruler .dot:hover{stroke-width:3}
+.facts{margin:1.6rem 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:.5rem 2.2rem}
+.facts li{font-size:1rem}
+.facts b{font:400 1.7rem/1 var(--serif);margin-right:.3rem}
+
+/* ---------- chapters ---------- */
+.chapter{position:relative;padding:clamp(4rem,7vw,6rem) 0 clamp(2.5rem,5vw,4rem);background:var(--paper)}
+.chapter:nth-of-type(odd){background:var(--paper2)}
+.chapter::before{content:"";position:absolute;left:0;right:0;top:-34px;height:120px;background:inherit;transform:skewY(var(--skew,-1.6deg));transform-origin:left top}
+.chapter:nth-of-type(odd)::before{--skew:1.6deg;transform-origin:right top}
+.chapter.dark{background:var(--navy);color:var(--paper)}
+.chapter.dark .chap-line,.chapter.dark figcaption .chips{color:#B9C3DD}
+.c-sun{--accent:var(--sun-d)} .c-sky{--accent:var(--sky-d)} .c-ember{--accent:var(--ember)} .c-pine{--accent:var(--pine)}
+.c-navy{--accent:var(--sun)}
+.chap-head{display:grid;grid-template-columns:auto 1fr auto;gap:1.2rem 1.6rem;align-items:end;margin-bottom:2.2rem}
+.roman{font:400 clamp(3.6rem,8vw,6.5rem)/.8 var(--serif);color:var(--accent);transform:rotate(-5deg);display:inline-block;min-width:1.4ch}
+.chap-head h2{font:400 clamp(2rem,4.4vw,3.3rem)/1 var(--serif);margin:0 0 .5rem;letter-spacing:-.01em}
+.chap-line{margin:0;max-width:52ch;color:var(--ink2)}
+.count{font:700 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;border:2px solid currentColor;padding:.25rem .6rem;border-radius:99px;white-space:nowrap}
+
+.shot{margin:0 0 1.9rem;break-inside:avoid}
+.frame{display:block;width:100%;padding:6px;border:0;background:var(--cream);cursor:zoom-in;box-shadow:0 8px 18px -10px rgba(22,33,61,.45);transition:transform .25s ease,box-shadow .25s ease}
+.frame img{display:block;width:100%;height:auto;background:var(--paper2)}
+.frame:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.shot.t1 .frame{transform:rotate(-1.5deg)} .shot.t2 .frame{transform:rotate(1.3deg)} .shot.t3 .frame{transform:rotate(-.8deg)}
+.shot .frame:hover{transform:rotate(0) translateY(-3px);box-shadow:0 16px 26px -12px rgba(22,33,61,.55)}
+figcaption{display:grid;grid-template-columns:auto 1fr;gap:.1rem .7rem;padding:.7rem .15rem 0;align-items:baseline}
+figcaption .no{font:400 1.25rem/1 var(--serif);color:var(--accent)}
+figcaption .chips{font:700 .7rem var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--ink2)}
+figcaption p{grid-column:2;margin:.15rem 0 0;font-size:.93rem;line-height:1.42}
+.shot.big{max-width:1000px;margin:0 auto 3.2rem;transform:rotate(-.6deg)}
+.shot.big .frame{padding:10px}
+.shot.big figcaption p{font-size:1.08rem;max-width:56ch}
+.shot.big figcaption .no{font-size:2rem}
+.grid{column-count:3;column-gap:1.7rem}
+
+/* ---------- skills ---------- */
+.skills{position:relative;background:var(--paper);padding:clamp(4rem,7vw,6rem) 0}
+.skills::before{content:"";position:absolute;left:0;right:0;top:-34px;height:120px;background:inherit;transform:skewY(-1.6deg);transform-origin:left top}
+.skills h2,.reflect h2{font:400 clamp(2rem,4.6vw,3.4rem)/1 var(--serif);margin:.3rem 0 2.2rem}
+.sk{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:2.4rem 1.6rem;align-items:start}
+.sk article{min-width:0}
+.sk h3{font:400 1.45rem/1.1 var(--serif);margin:.9rem 0 .4rem}
+.sk p{margin:0;max-width:44ch}
+.sk .pair{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.sk .pair img,.sk .one img{display:block;width:100%;height:auto}
+.sk .pair button,.sk .one button{display:block;padding:5px;border:0;background:var(--cream);cursor:zoom-in;box-shadow:0 8px 18px -10px rgba(22,33,61,.45);width:100%}
+.sk .pair small{display:block;font:700 .7rem var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);margin-top:.4rem}
+.sk .a{grid-column:1 / span 7}
+.sk .b{grid-column:9 / span 4;margin-top:3.4rem;transform:rotate(1.2deg)}
+.sk .c{grid-column:2 / span 5}
+.sk .d{grid-column:8 / span 5}
+.sk .d .pair{transform:rotate(-1deg)}
+
+/* ---------- reflection ---------- */
+.reflect{position:relative;background:var(--paper2);padding:clamp(4rem,7vw,6rem) 0 clamp(4rem,7vw,6rem)}
+.reflect::before{content:"";position:absolute;left:0;right:0;top:-34px;height:120px;background:inherit;transform:skewY(1.6deg);transform-origin:right top}
+.reflect .wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.85fr);gap:clamp(2rem,6vw,5rem);align-items:start}
+.reflect h3{font:400 1.5rem/1.1 var(--serif);margin:0 0 .5rem}
+.reflect p{margin:0 0 1.8rem;max-width:56ch}
+.reflect button.ref{font:inherit;font-weight:700;background:none;border:0;border-bottom:2px solid var(--sun);padding:0;cursor:pointer;color:inherit}
+.reflect button.ref:hover{background:var(--sun)}
+.note{background:var(--sun);color:var(--ink);padding:1.8rem 1.6rem 2rem;transform:rotate(2.2deg);box-shadow:0 18px 30px -16px rgba(22,33,61,.55);position:relative}
+.note::before{content:"";position:absolute;top:-13px;left:50%;width:84px;height:26px;margin-left:-42px;background:rgba(244,237,220,.75);transform:rotate(-3deg)}
+.note h3{margin-bottom:.8rem}
+.note ol{margin:0;padding-left:1.3rem}
+.note li{margin:0 0 .65rem}
+
+footer{background:var(--navy);color:var(--paper);padding:3rem 0 3.5rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem;align-items:end}
+footer .big{font:400 clamp(1.8rem,4vw,2.8rem)/1 var(--serif)}
+footer small{color:#B9C3DD;font-size:.9rem}
+
+/* ---------- lightbox ---------- */
+#lb{position:fixed;inset:0;z-index:50;background:rgba(14,21,40,.985);display:none;grid-template-rows:1fr auto;padding:clamp(10px,2vw,28px);gap:.8rem}
+#lb.open{display:grid}
+#lb .stage{min-height:0;display:flex;align-items:center;justify-content:center}
+#lb img{max-width:100%;max-height:100%;object-fit:contain;background:var(--cream);padding:6px}
+#lb .cap{color:var(--paper);display:grid;grid-template-columns:auto 1fr;gap:.2rem 1rem;max-width:880px;margin:0 auto;width:100%}
+#lb .cap .no{font:400 1.6rem/1 var(--serif);color:var(--sun)}
+#lb .cap .chips{font:700 .75rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:#B9C3DD;align-self:center}
+#lb .cap p{grid-column:2;margin:0}
+#lb button{position:absolute;background:var(--cream);color:var(--ink);border:0;width:46px;height:46px;font:700 1.3rem var(--sans);cursor:pointer;border-radius:50%}
+#lb button:hover,#lb button:focus-visible{background:var(--sun);outline:none}
+#lb .x{top:14px;right:14px} #lb .pv{left:14px;top:45%} #lb .nx{right:14px;top:45%}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr}
+  .prints{max-width:520px;width:100%;margin:1rem auto 0}
+  .grid{column-count:2}
+  .statement .wrap,.reflect .wrap{grid-template-columns:1fr}
+  .note{max-width:420px}
+  .sk .a,.sk .b,.sk .c,.sk .d{grid-column:1 / -1;margin-top:0}
+}
+@media (max-width:560px){
+  .hero::before{top:-160px}
+  .grid{column-count:1}
+  .chap-head{grid-template-columns:auto 1fr}
+  .count{grid-column:1 / -1;justify-self:start}
+  .bar .who{display:none}
+  .sk .pair{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  .print{animation:none} html{scroll-behavior:auto} .frame{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="who" href="#top">Medhansh Negi · 9D</a>
+    <nav aria-label="Chapters"><a href="#sun">I</a><a href="#road">II</a><a href="#falls">III</a><a href="#blue">IV</a><a href="#rays">V</a><a href="#climb">VI</a><a href="#cloud">VII</a><a href="#snow">VIII</a><a href="#skills">Skills</a><a href="#reflect">Reflection</a></nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Photography portfolio · Class 9D</p>
+      <h1>Light, <span class="mark">going up.</span></h1>
+      <p class="sub">93 photographs from four days in the mountains, 4–7 October 2026.</p>
+      <div class="id"><span>Medhansh Negi</span><span>One phone camera</span><span>f/1.75, every frame</span></div>
+    </div>
+    <div class="prints" aria-hidden="true">
+      <figure class="print a"><img src="img/p90.jpg" alt="" width="1800" height="1350"></figure>
+      <figure class="print b"><img src="img/p46.jpg" alt="" width="1800" height="1350"></figure>
+      <figure class="print c"><img src="img/p01.jpg" alt="" width="1800" height="1350"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="statement">
+  <div class="wrap">
+    <div class="label">Statement</div>
+    <div>
+      <p>Every photograph here comes from one phone camera whose aperture never moved from <b>f/1.75</b>. So shutter speed, ISO and exposure compensation did all the work.</p>
+      <p>Most of what I pointed it at is mountain light: low sun, cloud, hard shadow, and a few snow peaks. Under each frame is what the camera recorded, and a few words on how the exposure and contrast turned out.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ruler-sec" id="ruler-sec">
+  <div class="wrap">
+    <div class="label" style="color:var(--sun-d)">The whole set on one ruler</div>
+    <h2>Every frame, slow to fast</h2>
+    <p class="lede">One dot per photograph, placed by shutter speed. Hollow dots are ISO above 125. Colour matches the chapter. Click a dot to open that frame.</p>
+    <svg id="ruler" viewBox="0 0 1000 230" role="img" aria-label="Shutter speeds of all 93 frames on a logarithmic ruler from 1/17 to 1/6951 seconds"></svg>
+    <ul class="facts">
+      <li><b>1/17 s</b>slowest</li>
+      <li><b>1/6951 s</b>fastest</li>
+      <li><b>ISO 100–500</b></li>
+      <li><b>13</b>frames with negative exposure compensation</li>
+      <li><b>48 / 45</b>landscape / portrait</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="chapter c-sun" id="sun">
+  <div class="wrap">
+    <header class="chap-head">
+      <span class="roman">I</span>
+      <div>
+        <h2>Sun on the river</h2>
+        <p class="chap-line">4 October, 16:31–17:08. Sun low behind the ridge, shutter between 1/438 and 1/1495 s.</p>
+      </div>
+      <span class="count">5 frames</span>
+    </header>
+    <figure class="shot big" data-n="3">
+  <button class="frame" type="button" aria-label="Open frame 3 larger">
+    <img src="img/p03.jpg" width="1800" height="1350" alt="Same sun, wider river bend" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">03</span>
+    <span class="chips">1/1495 s · ISO 125</span>
+    <p>Same sun, wider river bend. Balanced exposure, silhouetted branches frame the glare; moderate contrast, warm hazy tones.</p>
+  </figcaption>
+</figure>
+    <div class="grid">
+<figure class="shot" data-n="1">
+  <button class="frame" type="button" aria-label="Open frame 1 larger">
+    <img src="img/p01.jpg" width="1800" height="1350" alt="Sun starburst over the ridge" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">01</span>
+    <span class="chips">1/438 s · ISO 125</span>
+    <p>Sun starburst over the ridge. Slightly underexposed to protect the glare; gentle contrast, warm haze softens the far hills.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="2">
+  <button class="frame" type="button" aria-label="Open frame 2 larger">
+    <img src="img/p02.jpg" width="1350" height="1800" alt="Sun through leaves, portrait crop" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">02</span>
+    <span class="chips">1/1430 s · ISO 125</span>
+    <p>Sun through leaves, portrait crop. Fast 1/1430 s keeps the flare tight; foreground sinks dark, highlights hold.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="4">
+  <button class="frame" type="button" aria-label="Open frame 4 larger">
+    <img src="img/p04.jpg" width="1800" height="1350" alt="Brightest frame of the evening" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">04</span>
+    <span class="chips">1/1201 s · ISO 125</span>
+    <p>Brightest frame of the evening. Hazy sky, even exposure, gentle contrast; palm silhouettes stay crisp.</p>
+  </figcaption>
+</figure>
+<figure class="shot t1" data-n="5">
+  <button class="frame" type="button" aria-label="Open frame 5 larger">
+    <img src="img/p05.jpg" width="1800" height="1350" alt="Late-afternoon haze at 1/644 s" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">05</span>
+    <span class="chips">1/644 s · ISO 100</span>
+    <p>Late-afternoon haze at 1/644 s. Evenly exposed, low contrast, pastel sky; ridges separate by tone alone.</p>
+  </figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section class="chapter c-sky" id="road">
+  <div class="wrap">
+    <header class="chap-head">
+      <span class="roman">II</span>
+      <div>
+        <h2>Through the windscreen</h2>
+        <p class="chap-line">5 October, 11:12–12:43. Shot from a moving car. The first five frames sit at −1 EV or lower, then back to 0.</p>
+      </div>
+      <span class="count">16 frames</span>
+    </header>
+    <figure class="shot big" data-n="16">
+  <button class="frame" type="button" aria-label="Open frame 16 larger">
+    <img src="img/p16.jpg" width="1800" height="1350" alt="Hillside town in pastel colour" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">16</span>
+    <span class="chips">1/1068 s · ISO 100</span>
+    <p>Hillside town in pastel colour. Bright, low contrast; the sky keeps its cloud detail above the green slope.</p>
+  </figcaption>
+</figure>
+    <div class="grid">
+<figure class="shot" data-n="6">
+  <button class="frame" type="button" aria-label="Open frame 6 larger">
+    <img src="img/p06.jpg" width="1800" height="1350" alt="Exposure dropped one stop (−1 EV): deep blue sky, dark ridgeline, crisp clouds, very fast 1/4229 s" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">06</span>
+    <span class="chips">1/4229 s · ISO 100 · −1 EV</span>
+    <p>Exposure dropped one stop (−1 EV): deep blue sky, dark ridgeline, crisp clouds, very fast 1/4229 s.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="7">
+  <button class="frame" type="button" aria-label="Open frame 7 larger">
+    <img src="img/p07.jpg" width="1800" height="1350" alt="−1 EV again" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">07</span>
+    <span class="chips">1/2338 s · ISO 100 · −1 EV</span>
+    <p>−1 EV again. Cloud highlights keep their detail while the hillside sinks into dark green; strong sky-to-land contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="8">
+  <button class="frame" type="button" aria-label="Open frame 8 larger">
+    <img src="img/p08.jpg" width="1350" height="1800" alt="Tilted view through the windscreen" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">08</span>
+    <span class="chips">1/1616 s · ISO 100 · −1 EV</span>
+    <p>Tilted view through the windscreen. Sky stays blue at −1 EV; dashboard shadows crush to black.</p>
+  </figcaption>
+</figure>
+<figure class="shot t1" data-n="9">
+  <button class="frame" type="button" aria-label="Open frame 9 larger">
+    <img src="img/p09.jpg" width="1350" height="1800" alt="Windscreen frame with sharp contrast: bright sky, black dashboard, clipped shadows" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">09</span>
+    <span class="chips">1/2629 s · ISO 100 · −1 EV</span>
+    <p>Windscreen frame with sharp contrast: bright sky, black dashboard, clipped shadows. Glare outside, darkness inside.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="10">
+  <button class="frame" type="button" aria-label="Open frame 10 larger">
+    <img src="img/p10.jpg" width="1350" height="1800" alt="Orange flowers at −1.5 EV, the darkest frame of the set" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">10</span>
+    <span class="chips">1/1687 s · ISO 100 · −1.5 EV</span>
+    <p>Orange flowers at −1.5 EV, the darkest frame of the set. Colour saturates richly against deep leaf shadow.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="11">
+  <button class="frame" type="button" aria-label="Open frame 11 larger">
+    <img src="img/p11.jpg" width="1350" height="1800" alt="Road ahead, EV 0" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">11</span>
+    <span class="chips">1/977 s · ISO 125</span>
+    <p>Road ahead, EV 0. Bright, even exposure and low contrast; blue sky, green hills, bonnet edge intrudes below.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="12">
+  <button class="frame" type="button" aria-label="Open frame 12 larger">
+    <img src="img/p12.jpg" width="1350" height="1800" alt="Airy and bright, among the lowest-contrast frames" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">12</span>
+    <span class="chips">1/771 s · ISO 100</span>
+    <p>Airy and bright, among the lowest-contrast frames. Cloud, wires and curve sign read cleanly; sky is saturated.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="13">
+  <button class="frame" type="button" aria-label="Open frame 13 larger">
+    <img src="img/p13.jpg" width="1350" height="1800" alt="Wires slice the blue sky and the lean adds energy" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">13</span>
+    <span class="chips">1/921 s · ISO 125</span>
+    <p>Wires slice the blue sky and the lean adds energy. Bright exposure, low contrast, green slope darkens evenly.</p>
+  </figcaption>
+</figure>
+<figure class="shot t2" data-n="14">
+  <button class="frame" type="button" aria-label="Open frame 14 larger">
+    <img src="img/p14.jpg" width="1350" height="1800" alt="Midday town road" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">14</span>
+    <span class="chips">1/1133 s · ISO 100</span>
+    <p>Midday town road. Bright exposure, low contrast, hazy sky; the truck and shopfronts carry the only strong tones.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="15">
+  <button class="frame" type="button" aria-label="Open frame 15 larger">
+    <img src="img/p15.jpg" width="1350" height="1800" alt="Busy bazaar street" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">15</span>
+    <span class="chips">1/868 s · ISO 100</span>
+    <p>Busy bazaar street. Even bright exposure; the blue building pops against a pale sky, colours stay vivid.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="17">
+  <button class="frame" type="button" aria-label="Open frame 17 larger">
+    <img src="img/p17.jpg" width="1350" height="1800" alt="Upward tilt through cloud, wires and valley slope" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">17</span>
+    <span class="chips">1/1037 s · ISO 125</span>
+    <p>Upward tilt through cloud, wires and valley slope. Medium contrast; the blue sky is richer than the greens.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="18">
+  <button class="frame" type="button" aria-label="Open frame 18 larger">
+    <img src="img/p18.jpg" width="1800" height="1350" alt="River below a landslide scar" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">18</span>
+    <span class="chips">1/716 s · ISO 125</span>
+    <p>River below a landslide scar. 1/716 s freezes the churning water; the wing mirror intrudes on the right.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="19">
+  <button class="frame" type="button" aria-label="Open frame 19 larger">
+    <img src="img/p19.jpg" width="1800" height="1350" alt="Village across the river at 1/1084 s" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">19</span>
+    <span class="chips">1/1084 s · ISO 125</span>
+    <p>Village across the river at 1/1084 s. Bright, low contrast; cloud shadows and pale water flatten the depth.</p>
+  </figcaption>
+</figure>
+<figure class="shot t3" data-n="20">
+  <button class="frame" type="button" aria-label="Open frame 20 larger">
+    <img src="img/p20.jpg" width="1800" height="1350" alt="Tilted horizon funnels into the valley" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">20</span>
+    <span class="chips">1/945 s · ISO 125</span>
+    <p>Tilted horizon funnels into the valley. Even exposure, windscreen frame darkens the corners; soft cloud highlights.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="21">
+  <button class="frame" type="button" aria-label="Open frame 21 larger">
+    <img src="img/p21.jpg" width="1800" height="1350" alt="Cumulus billows over green ridges" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">21</span>
+    <span class="chips">1/1609 s · ISO 125</span>
+    <p>Cumulus billows over green ridges. 1/1609 s keeps cloud texture; mirror and barrier edge the frame.</p>
+  </figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section class="chapter c-ember" id="falls">
+  <div class="wrap">
+    <header class="chap-head">
+      <span class="roman">III</span>
+      <div>
+        <h2>Waterfall, then weather</h2>
+        <p class="chap-line">5 October, 14:16–16:35. Back to −1 EV for white water and bright cloud.</p>
+      </div>
+      <span class="count">6 frames</span>
+    </header>
+    <figure class="shot big" data-n="23">
+  <button class="frame" type="button" aria-label="Open frame 23 larger">
+    <img src="img/p23.jpg" width="1350" height="1800" alt="Slower 1/279 s softens the fall into silk" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">23</span>
+    <span class="chips">1/279 s · ISO 100 · −1 EV</span>
+    <p>Slower 1/279 s softens the fall into silk. −1 EV protects the whites; mist lowers contrast.</p>
+  </figcaption>
+</figure>
+    <div class="grid">
+<figure class="shot" data-n="22">
+  <button class="frame" type="button" aria-label="Open frame 22 larger">
+    <img src="img/p22.jpg" width="1350" height="1800" alt="Waterfall at −1 EV: falling water keeps its whites, trees shade to deep green" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">22</span>
+    <span class="chips">1/630 s · ISO 100 · −1 EV</span>
+    <p>Waterfall at −1 EV: falling water keeps its whites, trees shade to deep green. Shutter 1/630 s.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="24">
+  <button class="frame" type="button" aria-label="Open frame 24 larger">
+    <img src="img/p24.jpg" width="1800" height="1350" alt="Road bend at 1/2370 s" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">24</span>
+    <span class="chips">1/2370 s · ISO 100 · −1 EV</span>
+    <p>Road bend at 1/2370 s. Cloudy sky at −1 EV, shadowed cliff crushes dark; strong contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="25">
+  <button class="frame" type="button" aria-label="Open frame 25 larger">
+    <img src="img/p25.jpg" width="1800" height="1350" alt="Cloud towers on deep blue" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">25</span>
+    <span class="chips">1/1942 s · ISO 100 · −1 EV</span>
+    <p>Cloud towers on deep blue. −1 EV preserves their white texture; ridges sink to near-black.</p>
+  </figcaption>
+</figure>
+<figure class="shot t1" data-n="26">
+  <button class="frame" type="button" aria-label="Open frame 26 larger">
+    <img src="img/p26.jpg" width="1800" height="1350" alt="Very high contrast: glowing cloud with near-clipped highlights, mountains in dark shadow; red roofs give the only warm accent" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">26</span>
+    <span class="chips">1/376 s · ISO 100</span>
+    <p>Very high contrast: glowing cloud with near-clipped highlights, mountains in dark shadow; red roofs give the only warm accent.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="27">
+  <button class="frame" type="button" aria-label="Open frame 27 larger">
+    <img src="img/p27.jpg" width="1350" height="1800" alt="Evening sky in portrait, −1 EV" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">27</span>
+    <span class="chips">1/1051 s · ISO 100 · −1 EV</span>
+    <p>Evening sky in portrait, −1 EV. Cloud edges pick up pink while mountains sit in cool shadow.</p>
+  </figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section class="chapter dark c-navy" id="blue">
+  <div class="wrap">
+    <header class="chap-head">
+      <span class="roman">IV</span>
+      <div>
+        <h2>Blue before the sun</h2>
+        <p class="chap-line">6 October, 06:00–08:47. The slowest shutter (1/17 s) and highest ISO (500) of the set live here, then blue shadows take over.</p>
+      </div>
+      <span class="count">19 frames</span>
+    </header>
+    <figure class="shot big" data-n="39">
+  <button class="frame" type="button" aria-label="Open frame 39 larger">
+    <img src="img/p39.jpg" width="1350" height="1800" alt="V-shaped gorge frames distant snow" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">39</span>
+    <span class="chips">1/555 s · ISO 100</span>
+    <p>V-shaped gorge frames distant snow. Even exposure at EV 0; clean blue gradient from pale horizon to deep sky.</p>
+  </figcaption>
+</figure>
+    <div class="grid">
+<figure class="shot" data-n="28">
+  <button class="frame" type="button" aria-label="Open frame 28 larger">
+    <img src="img/p28.jpg" width="1800" height="1350" alt="Dawn, 1/17 s, ISO 500: slowest shutter, highest ISO here" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">28</span>
+    <span class="chips">1/17 s · ISO 500</span>
+    <p>Dawn, 1/17 s, ISO 500: slowest shutter, highest ISO here. Movement blurs the whole frame; grain shows in shadows.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="29">
+  <button class="frame" type="button" aria-label="Open frame 29 larger">
+    <img src="img/p29.jpg" width="1800" height="1350" alt="Hazy sky blows out to white, hills hold mid-tones" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">29</span>
+    <span class="chips">1/100 s · ISO 250</span>
+    <p>Hazy sky blows out to white, hills hold mid-tones. High contrast, ISO 250, 1/100 s.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="30">
+  <button class="frame" type="button" aria-label="Open frame 30 larger">
+    <img src="img/p30.jpg" width="1800" height="1350" alt="Sun behind haze: sky fully white, trees underexposed" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">30</span>
+    <span class="chips">1/100 s · ISO 100</span>
+    <p>Sun behind haze: sky fully white, trees underexposed. The highest contrast in the set; exposure favours the shadows.</p>
+  </figcaption>
+</figure>
+<figure class="shot t1" data-n="31">
+  <button class="frame" type="button" aria-label="Open frame 31 larger">
+    <img src="img/p31.jpg" width="1350" height="1800" alt="Silhouette at −1 EV" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">31</span>
+    <span class="chips">1/182 s · ISO 100 · −1 EV</span>
+    <p>Silhouette at −1 EV. Trees and crowd fall to black beneath a pale sky; half the frame is shadow.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="32">
+  <button class="frame" type="button" aria-label="Open frame 32 larger">
+    <img src="img/p32.jpg" width="1800" height="1350" alt="Cool blue shadows dominate; a thin sun sliver sits in the ridge dip" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">32</span>
+    <span class="chips">1/616 s · ISO 100</span>
+    <p>Cool blue shadows dominate; a thin sun sliver sits in the ridge dip. Underexposed, strong contrast, blue colour cast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="33">
+  <button class="frame" type="button" aria-label="Open frame 33 larger">
+    <img src="img/p33.jpg" width="1350" height="1800" alt="Portrait frame under hazy lilac sky" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">33</span>
+    <span class="chips">1/528 s · ISO 100</span>
+    <p>Portrait frame under hazy lilac sky. Mid exposure, medium contrast; slope detail visible, gorge below falls dark.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="34">
+  <button class="frame" type="button" aria-label="Open frame 34 larger">
+    <img src="img/p34.jpg" width="1800" height="1350" alt="Wire crosses a cloudy sky" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">34</span>
+    <span class="chips">1/175 s · ISO 100</span>
+    <p>Wire crosses a cloudy sky. 1/175 s, low-key greens, soft contrast; haze keeps the ridges layered.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="35">
+  <button class="frame" type="button" aria-label="Open frame 35 larger">
+    <img src="img/p35.jpg" width="1800" height="1350" alt="Blue-hour valley: heavy blue cast in the shadows, bright sky patches top left" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">35</span>
+    <span class="chips">1/564 s · ISO 125</span>
+    <p>Blue-hour valley: heavy blue cast in the shadows, bright sky patches top left. Strong contrast; the wire adds a diagonal.</p>
+  </figcaption>
+</figure>
+<figure class="shot t2" data-n="36">
+  <button class="frame" type="button" aria-label="Open frame 36 larger">
+    <img src="img/p36.jpg" width="1800" height="1350" alt="Rays fan out from behind the ridge" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">36</span>
+    <span class="chips">1/580 s · ISO 125</span>
+    <p>Rays fan out from behind the ridge. Shadows turn deep blue against bright sky; high contrast, cool white balance.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="37">
+  <button class="frame" type="button" aria-label="Open frame 37 larger">
+    <img src="img/p37.jpg" width="1350" height="1800" alt="Portrait: crowd on the trail, dark conifer slope, sun peeking past the ridge" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">37</span>
+    <span class="chips">1/555 s · ISO 100</span>
+    <p>Portrait: crowd on the trail, dark conifer slope, sun peeking past the ridge. Underexposed foreground, medium-high contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="38">
+  <button class="frame" type="button" aria-label="Open frame 38 larger">
+    <img src="img/p38.jpg" width="1350" height="1800" alt="Snow peaks appear between travellers" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">38</span>
+    <span class="chips">1/815 s · ISO 125</span>
+    <p>Snow peaks appear between travellers. Bright cool exposure at 1/815 s; blue sky leads the eye to the summits.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="40">
+  <button class="frame" type="button" aria-label="Open frame 40 larger">
+    <img src="img/p40.jpg" width="1800" height="1350" alt="Rock-cut ledge with travellers, snow glimpsed in the notch" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">40</span>
+    <span class="chips">1/486 s · ISO 100</span>
+    <p>Rock-cut ledge with travellers, snow glimpsed in the notch. Balanced exposure; hillside shadows still hold detail.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="41">
+  <button class="frame" type="button" aria-label="Open frame 41 larger">
+    <img src="img/p41.jpg" width="1350" height="1800" alt="Boulders in the foreground, cliff in blue shade" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">41</span>
+    <span class="chips">1/663 s · ISO 125</span>
+    <p>Boulders in the foreground, cliff in blue shade. Even exposure, medium contrast, cool light on the far slope.</p>
+  </figcaption>
+</figure>
+<figure class="shot t3" data-n="42">
+  <button class="frame" type="button" aria-label="Open frame 42 larger">
+    <img src="img/p42.jpg" width="1350" height="1800" alt="A diagonal pipe leads into the shaded valley" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">42</span>
+    <span class="chips">1/1289 s · ISO 100</span>
+    <p>A diagonal pipe leads into the shaded valley. Bright sky, cool shadows; 1/1289 s keeps edges sharp.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="43">
+  <button class="frame" type="button" aria-label="Open frame 43 larger">
+    <img src="img/p43.jpg" width="1350" height="1800" alt="Blue-shadowed slope with small cloud puffs" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">43</span>
+    <span class="chips">1/465 s · ISO 100</span>
+    <p>Blue-shadowed slope with small cloud puffs. Underexposed, dark conifers; the pipe adds a diagonal at the bottom.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="44">
+  <button class="frame" type="button" aria-label="Open frame 44 larger">
+    <img src="img/p44.jpg" width="1800" height="1350" alt="Snow summit above the gorge" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">44</span>
+    <span class="chips">1/564 s · ISO 125</span>
+    <p>Snow summit above the gorge. Balanced exposure; blue and orange tents add small colour accents, medium contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="45">
+  <button class="frame" type="button" aria-label="Open frame 45 larger">
+    <img src="img/p45.jpg" width="1350" height="1800" alt="Sun rays burst behind a dark ridge" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">45</span>
+    <span class="chips">1/1064 s · ISO 100</span>
+    <p>Sun rays burst behind a dark ridge. Heavily shadowed, deep blue; the bright cloud edge sets the contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="46">
+  <button class="frame" type="button" aria-label="Open frame 46 larger">
+    <img src="img/p46.jpg" width="1800" height="1350" alt="Sunburst clouds over a navy ridge at 1/1018 s" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">46</span>
+    <span class="chips">1/1018 s · ISO 125</span>
+    <p>Sunburst clouds over a navy ridge at 1/1018 s. Silhouette shadows dominate; the rays give one clean direction.</p>
+  </figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section class="chapter c-sun" id="rays">
+  <div class="wrap">
+    <header class="chap-head">
+      <span class="roman">V</span>
+      <div>
+        <h2>Rays and cloud</h2>
+        <p class="chap-line">6 October, 09:06–09:37. The sun enters the frame and most shutter speeds climb past 1/800 s.</p>
+      </div>
+      <span class="count">12 frames</span>
+    </header>
+    <figure class="shot big" data-n="50">
+  <button class="frame" type="button" aria-label="Open frame 50 larger">
+    <img src="img/p50.jpg" width="1800" height="1350" alt="Sun behind cloud, rays cutting across the slope" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">50</span>
+    <span class="chips">1/3176 s · ISO 125</span>
+    <p>Sun behind cloud, rays cutting across the slope. 1/3176 s keeps cloud texture; deep shadows, high contrast.</p>
+  </figcaption>
+</figure>
+    <div class="grid">
+<figure class="shot" data-n="47">
+  <button class="frame" type="button" aria-label="Open frame 47 larger">
+    <img src="img/p47.jpg" width="1350" height="1800" alt="Waterfall on dark stone, ISO 250 at 1/100 s" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">47</span>
+    <span class="chips">1/100 s · ISO 250</span>
+    <p>Waterfall on dark stone, ISO 250 at 1/100 s. Flow softens slightly; a bright umbrella anchors the corner.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="48">
+  <button class="frame" type="button" aria-label="Open frame 48 larger">
+    <img src="img/p48.jpg" width="1800" height="1350" alt="Valley opens to snow peaks" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">48</span>
+    <span class="chips">1/1733 s · ISO 125</span>
+    <p>Valley opens to snow peaks. 1/1733 s keeps cloud detail; saturated sky balances the dark slopes.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="49">
+  <button class="frame" type="button" aria-label="Open frame 49 larger">
+    <img src="img/p49.jpg" width="1800" height="1350" alt="Backlit cloud with a grey underbelly; the ridge is nearly a silhouette" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">49</span>
+    <span class="chips">1/1270 s · ISO 125</span>
+    <p>Backlit cloud with a grey underbelly; the ridge is nearly a silhouette. Strong contrast, wires cut diagonally.</p>
+  </figcaption>
+</figure>
+<figure class="shot t1" data-n="51">
+  <button class="frame" type="button" aria-label="Open frame 51 larger">
+    <img src="img/p51.jpg" width="1350" height="1800" alt="Portrait: sunlit green terrace beside a shaded slope" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">51</span>
+    <span class="chips">1/872 s · ISO 100 · −⅓ EV</span>
+    <p>Portrait: sunlit green terrace beside a shaded slope. A slight −⅓ EV keeps cloud detail while foliage glows.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="52">
+  <button class="frame" type="button" aria-label="Open frame 52 larger">
+    <img src="img/p52.jpg" width="1800" height="1350" alt="Dry rockfall and stone wall in hard light" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">52</span>
+    <span class="chips">1/806 s · ISO 100</span>
+    <p>Dry rockfall and stone wall in hard light. Bright, medium contrast; pale rock against blue sky is crisp.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="53">
+  <button class="frame" type="button" aria-label="Open frame 53 larger">
+    <img src="img/p53.jpg" width="1800" height="1350" alt="Wet rock in side light, trees above" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">53</span>
+    <span class="chips">1/517 s · ISO 100</span>
+    <p>Wet rock in side light, trees above. Warm mid-tones, medium contrast; the angle of light brings out texture.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="54">
+  <button class="frame" type="button" aria-label="Open frame 54 larger">
+    <img src="img/p54.jpg" width="1350" height="1800" alt="Sun hidden behind a cloud edge" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">54</span>
+    <span class="chips">1/3534 s · ISO 100 · −⅓ EV</span>
+    <p>Sun hidden behind a cloud edge. 1/3534 s at −⅓ EV; sharp silhouette against glowing sky, very high contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="55">
+  <button class="frame" type="button" aria-label="Open frame 55 larger">
+    <img src="img/p55.jpg" width="1350" height="1800" alt="Rays fall across a shaded slope, umbrella in blue shadow" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">55</span>
+    <span class="chips">1/2039 s · ISO 125</span>
+    <p>Rays fall across a shaded slope, umbrella in blue shadow. Cool tones, high contrast, 1/2039 s.</p>
+  </figcaption>
+</figure>
+<figure class="shot t2" data-n="56">
+  <button class="frame" type="button" aria-label="Open frame 56 larger">
+    <img src="img/p56.jpg" width="1800" height="1350" alt="A dark slope slants into the sky" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">56</span>
+    <span class="chips">1/1539 s · ISO 100</span>
+    <p>A dark slope slants into the sky. Deep shade fills most of the frame; the bright cloud corner balances it.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="57">
+  <button class="frame" type="button" aria-label="Open frame 57 larger">
+    <img src="img/p57.jpg" width="1800" height="1350" alt="Trees frame a tent roof and cloud" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">57</span>
+    <span class="chips">1/1215 s · ISO 125</span>
+    <p>Trees frame a tent roof and cloud. Medium exposure; rays soften the ridge, greens and blues balance.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="58">
+  <button class="frame" type="button" aria-label="Open frame 58 larger">
+    <img src="img/p58.jpg" width="1800" height="1350" alt="Looking up through leaves to the ridge" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">58</span>
+    <span class="chips">1/1405 s · ISO 125</span>
+    <p>Looking up through leaves to the ridge. Bright, warm greens, light contrast at 1/1405 s; the pole leans.</p>
+  </figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section class="chapter c-pine" id="climb">
+  <div class="wrap">
+    <header class="chap-head">
+      <span class="roman">VI</span>
+      <div>
+        <h2>The climb</h2>
+        <p class="chap-line">6 October, 09:39–10:53. Light is high and hard; most frames run faster than 1/1200 s.</p>
+      </div>
+      <span class="count">12 frames</span>
+    </header>
+    <figure class="shot big" data-n="63">
+  <button class="frame" type="button" aria-label="Open frame 63 larger">
+    <img src="img/p63.jpg" width="1800" height="1350" alt="Seated animal silhouette against cloud" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">63</span>
+    <span class="chips">1/5096 s · ISO 125</span>
+    <p>Seated animal silhouette against cloud. 1/5096 s, balanced exposure; the shape reads purely through contrast.</p>
+  </figcaption>
+</figure>
+    <div class="grid">
+<figure class="shot" data-n="59">
+  <button class="frame" type="button" aria-label="Open frame 59 larger">
+    <img src="img/p59.jpg" width="1350" height="1800" alt="Under a timber roof: dark frame, trunk glowing in backlight" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">59</span>
+    <span class="chips">1/432 s · ISO 125</span>
+    <p>Under a timber roof: dark frame, trunk glowing in backlight. Natural vignette, darker exposure, medium contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="60">
+  <button class="frame" type="button" aria-label="Open frame 60 larger">
+    <img src="img/p60.jpg" width="1800" height="1350" alt="Sunlit tree mass at 1/261 s, ISO 100" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">60</span>
+    <span class="chips">1/261 s · ISO 100</span>
+    <p>Sunlit tree mass at 1/261 s, ISO 100. Balanced tone, medium contrast; leaves show warm green texture.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="61">
+  <button class="frame" type="button" aria-label="Open frame 61 larger">
+    <img src="img/p61.jpg" width="1350" height="1800" alt="Portrait: ridge and bamboo leaves frame the sky, a figure at left" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">61</span>
+    <span class="chips">1/2398 s · ISO 125</span>
+    <p>Portrait: ridge and bamboo leaves frame the sky, a figure at left. Medium contrast; 1/2398 s freezes branches.</p>
+  </figcaption>
+</figure>
+<figure class="shot t1" data-n="62">
+  <button class="frame" type="button" aria-label="Open frame 62 larger">
+    <img src="img/p62.jpg" width="1800" height="1350" alt="Sun flare over a dark hill at 1/3737 s" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">62</span>
+    <span class="chips">1/3737 s · ISO 125</span>
+    <p>Sun flare over a dark hill at 1/3737 s. Highlights hold, shadows run deep; strong contrast with a rayed glow.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="64">
+  <button class="frame" type="button" aria-label="Open frame 64 larger">
+    <img src="img/p64.jpg" width="1350" height="1800" alt="A path climbs beside a red railing, wires lift the eye" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">64</span>
+    <span class="chips">1/1517 s · ISO 125</span>
+    <p>A path climbs beside a red railing, wires lift the eye. Even exposure, 1/1517 s; yellow slope against blue.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="65">
+  <button class="frame" type="button" aria-label="Open frame 65 larger">
+    <img src="img/p65.jpg" width="1800" height="1350" alt="Hazy ridges layer into cloud while light filters through trees" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">65</span>
+    <span class="chips">1/1866 s · ISO 125</span>
+    <p>Hazy ridges layer into cloud while light filters through trees. Balanced exposure, moderate contrast, airy depth.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="66">
+  <button class="frame" type="button" aria-label="Open frame 66 larger">
+    <img src="img/p66.jpg" width="1350" height="1800" alt="Portrait: sun hits the top right, flare crosses the trees" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">66</span>
+    <span class="chips">1/4023 s · ISO 125</span>
+    <p>Portrait: sun hits the top right, flare crosses the trees. Dark valley below, 1/4023 s; wide tonal range.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="67">
+  <button class="frame" type="button" aria-label="Open frame 67 larger">
+    <img src="img/p67.jpg" width="1800" height="1350" alt="Misty slope under a cloud-lined ridge, wire cutting the corner" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">67</span>
+    <span class="chips">1/1473 s · ISO 125</span>
+    <p>Misty slope under a cloud-lined ridge, wire cutting the corner. Haze softens contrast; even mid-tones.</p>
+  </figcaption>
+</figure>
+<figure class="shot t2" data-n="68">
+  <button class="frame" type="button" aria-label="Open frame 68 larger">
+    <img src="img/p68.jpg" width="1800" height="1350" alt="Wide, tilted view with wires, cloud and a red beanie" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">68</span>
+    <span class="chips">1/3369 s · ISO 125</span>
+    <p>Wide, tilted view with wires, cloud and a red beanie. Bright sky, balanced exposure at 1/3369 s.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="69">
+  <button class="frame" type="button" aria-label="Open frame 69 larger">
+    <img src="img/p69.jpg" width="1800" height="1350" alt="A timber eave frames the forested ridge" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">69</span>
+    <span class="chips">1/1215 s · ISO 125</span>
+    <p>A timber eave frames the forested ridge. Balanced tones, moderate contrast; the eave adds warm texture top right.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="70">
+  <button class="frame" type="button" aria-label="Open frame 70 larger">
+    <img src="img/p70.jpg" width="1350" height="1800" alt="Heavy cloud presses down at 1/4834 s" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">70</span>
+    <span class="chips">1/4834 s · ISO 125</span>
+    <p>Heavy cloud presses down at 1/4834 s. Balanced exposure; whites keep texture, the valley below stays soft.</p>
+  </figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section class="chapter c-sky" id="cloud">
+  <div class="wrap">
+    <header class="chap-head">
+      <span class="roman">VII</span>
+      <div>
+        <h2>Into the cloud</h2>
+        <p class="chap-line">6 October, 11:05–15:27. Cloud closes in and the sky turns from blue to grey.</p>
+      </div>
+      <span class="count">19 frames</span>
+    </header>
+    <figure class="shot big" data-n="77">
+  <button class="frame" type="button" aria-label="Open frame 77 larger">
+    <img src="img/p77.jpg" width="1350" height="1800" alt="Gorge converges to a cloud-filled notch" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">77</span>
+    <span class="chips">1/2699 s · ISO 125</span>
+    <p>Gorge converges to a cloud-filled notch. Strong leading lines; bright saturated sky, steel bridge along the bottom.</p>
+  </figcaption>
+</figure>
+    <div class="grid">
+<figure class="shot" data-n="71">
+  <button class="frame" type="button" aria-label="Open frame 71 larger">
+    <img src="img/p71.jpg" width="1350" height="1800" alt="Overcast light mutes the greens" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">71</span>
+    <span class="chips">1/564 s · ISO 125</span>
+    <p>Overcast light mutes the greens. Streams in the foreground; moderate contrast, gentle exposure, low-key sky.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="72">
+  <button class="frame" type="button" aria-label="Open frame 72 larger">
+    <img src="img/p72.jpg" width="1350" height="1800" alt="Waterfall in a rocky cleft under pale grey sky" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">72</span>
+    <span class="chips">1/451 s · ISO 100</span>
+    <p>Waterfall in a rocky cleft under pale grey sky. 1/451 s streaks the water white; neutral tones, moderate contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="73">
+  <button class="frame" type="button" aria-label="Open frame 73 larger">
+    <img src="img/p73.jpg" width="1350" height="1800" alt="Valley narrows toward cloud, river below" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">73</span>
+    <span class="chips">1/2434 s · ISO 125</span>
+    <p>Valley narrows toward cloud, river below. Fast 1/2434 s keeps rocks sharp; bright sky, cool greens.</p>
+  </figcaption>
+</figure>
+<figure class="shot t1" data-n="74">
+  <button class="frame" type="button" aria-label="Open frame 74 larger">
+    <img src="img/p74.jpg" width="1350" height="1800" alt="Bridge crowd and blue tents on the hillside" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">74</span>
+    <span class="chips">1/564 s · ISO 125</span>
+    <p>Bridge crowd and blue tents on the hillside. Slightly dark exposure; overcast sky is bright but detailed.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="75">
+  <button class="frame" type="button" aria-label="Open frame 75 larger">
+    <img src="img/p75.jpg" width="1350" height="1800" alt="Cloud wall against blue" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">75</span>
+    <span class="chips">1/4268 s · ISO 100</span>
+    <p>Cloud wall against blue. 1/4268 s freezes the cumulus edges; green slope falls into cool shadow.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="76">
+  <button class="frame" type="button" aria-label="Open frame 76 larger">
+    <img src="img/p76.jpg" width="1350" height="1800" alt="Camp tents on a slope below low cloud" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">76</span>
+    <span class="chips">1/792 s · ISO 100</span>
+    <p>Camp tents on a slope below low cloud. Bright overcast light, low saturation, moderate contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="78">
+  <button class="frame" type="button" aria-label="Open frame 78 larger">
+    <img src="img/p78.jpg" width="1350" height="1800" alt="Same valley, wider bend" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">78</span>
+    <span class="chips">1/2906 s · ISO 125</span>
+    <p>Same valley, wider bend. Huge cloud, balanced exposure, cooler shadows; rocks stay sharp at 1/2906 s.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="79">
+  <button class="frame" type="button" aria-label="Open frame 79 larger">
+    <img src="img/p79.jpg" width="1350" height="1800" alt="Heavy cloud fills two-thirds, dark forest below" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">79</span>
+    <span class="chips">1/2100 s · ISO 125</span>
+    <p>Heavy cloud fills two-thirds, dark forest below. Very high contrast: the tones split the frame almost in half.</p>
+  </figcaption>
+</figure>
+<figure class="shot t2" data-n="80">
+  <button class="frame" type="button" aria-label="Open frame 80 larger">
+    <img src="img/p80.jpg" width="1350" height="1800" alt="Rapids frozen at 1/1473 s" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">80</span>
+    <span class="chips">1/1473 s · ISO 125</span>
+    <p>Rapids frozen at 1/1473 s. White water pops against grey boulders; balanced exposure, medium contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="81">
+  <button class="frame" type="button" aria-label="Open frame 81 larger">
+    <img src="img/p81.jpg" width="1800" height="1350" alt="Rapids and a red-white railing in front" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">81</span>
+    <span class="chips">1/653 s · ISO 100</span>
+    <p>Rapids and a red-white railing in front. Wide angle, cloud-edged sky; moderate contrast, gently bright.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="82">
+  <button class="frame" type="button" aria-label="Open frame 82 larger">
+    <img src="img/p82.jpg" width="1800" height="1350" alt="Wires arc across drifting mist at 1/3430 s" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">82</span>
+    <span class="chips">1/3430 s · ISO 125</span>
+    <p>Wires arc across drifting mist at 1/3430 s. Cloud bank and valley wall merge into soft grey-greens.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="83">
+  <button class="frame" type="button" aria-label="Open frame 83 larger">
+    <img src="img/p83.jpg" width="1350" height="1800" alt="A landslide scar channels a white stream" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">83</span>
+    <span class="chips">1/502 s · ISO 125</span>
+    <p>A landslide scar channels a white stream. Pale rock, dark conifers; sharp texture, medium contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="84">
+  <button class="frame" type="button" aria-label="Open frame 84 larger">
+    <img src="img/p84.jpg" width="1350" height="1800" alt="Same cleft from further back; mist hides the summit" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">84</span>
+    <span class="chips">1/1255 s · ISO 125</span>
+    <p>Same cleft from further back; mist hides the summit. Even exposure, muted colour, low-medium contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot t3" data-n="85">
+  <button class="frame" type="button" aria-label="Open frame 85 larger">
+    <img src="img/p85.jpg" width="1350" height="1800" alt="Torn cloud above a conifer slope at 1/2201 s" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">85</span>
+    <span class="chips">1/2201 s · ISO 125</span>
+    <p>Torn cloud above a conifer slope at 1/2201 s. Muted tones, medium contrast, even exposure.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="86">
+  <button class="frame" type="button" aria-label="Open frame 86 larger">
+    <img src="img/p86.jpg" width="1800" height="1350" alt="Mist tears through ridges" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">86</span>
+    <span class="chips">1/572 s · ISO 100</span>
+    <p>Mist tears through ridges. Grey, atmospheric, low saturation; 1/572 s is still sharp.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="87">
+  <button class="frame" type="button" aria-label="Open frame 87 larger">
+    <img src="img/p87.jpg" width="1800" height="1350" alt="Light rays punch through grey cloud" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">87</span>
+    <span class="chips">1/1707 s · ISO 125</span>
+    <p>Light rays punch through grey cloud. Balanced exposure; the green roof gives the only colour, moderate contrast.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="88">
+  <button class="frame" type="button" aria-label="Open frame 88 larger">
+    <img src="img/p88.jpg" width="1800" height="1350" alt="Same gap in the cloud, closer" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">88</span>
+    <span class="chips">1/1866 s · ISO 125</span>
+    <p>Same gap in the cloud, closer. Dark rock at the left edge, 1/1866 s; muted palette, bright cloud holds detail.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="89">
+  <button class="frame" type="button" aria-label="Open frame 89 larger">
+    <img src="img/p89.jpg" width="1800" height="1012" alt="Wide valley recedes into haze" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">89</span>
+    <span class="chips">1/268 s · ISO 100</span>
+    <p>Wide valley recedes into haze. 1/268 s, balanced exposure; haze gives low contrast and cool pastel distance.</p>
+  </figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section class="chapter c-ember" id="snow">
+  <div class="wrap">
+    <header class="chap-head">
+      <span class="roman">VIII</span>
+      <div>
+        <h2>The white ridge</h2>
+        <p class="chap-line">7 October, 09:11–10:40. A clear morning: blue sky, snow ridge, and the fastest shutter of the trip, 1/6951 s.</p>
+      </div>
+      <span class="count">4 frames</span>
+    </header>
+    <figure class="shot big" data-n="92">
+  <button class="frame" type="button" aria-label="Open frame 92 larger">
+    <img src="img/p92.jpg" width="1800" height="1350" alt="Snow range above a temple roof" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">92</span>
+    <span class="chips">1/3038 s · ISO 125</span>
+    <p>Snow range above a temple roof. Fast 1/3038 s keeps snow detail; saturated sky, busy colourful foreground.</p>
+  </figcaption>
+</figure>
+    <div class="grid">
+<figure class="shot" data-n="90">
+  <button class="frame" type="button" aria-label="Open frame 90 larger">
+    <img src="img/p90.jpg" width="1800" height="1350" alt="Cleanest sky of the set: deep blue, snow ridge, one tiny bird" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">90</span>
+    <span class="chips">1/2822 s · ISO 125</span>
+    <p>Cleanest sky of the set: deep blue, snow ridge, one tiny bird. Low contrast, 1/2822 s, saturated colour.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="91">
+  <button class="frame" type="button" aria-label="Open frame 91 larger">
+    <img src="img/p91.jpg" width="1350" height="1800" alt="Crowded street under a snow ridge" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">91</span>
+    <span class="chips">1/2864 s · ISO 125</span>
+    <p>Crowded street under a snow ridge. Bright, even exposure; a saffron flag is the warmest accent.</p>
+  </figcaption>
+</figure>
+<figure class="shot" data-n="93">
+  <button class="frame" type="button" aria-label="Open frame 93 larger">
+    <img src="img/p93.jpg" width="1800" height="1350" alt="Last frame at 1/6951 s, the fastest shutter of the trip" loading="lazy" decoding="async">
+  </button>
+  <figcaption>
+    <span class="no">93</span>
+    <span class="chips">1/6951 s · ISO 125</span>
+    <p>Last frame at 1/6951 s, the fastest shutter of the trip. Sun-bleached sky, tents and wires tilt across it.</p>
+  </figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="wrap">
+    <div class="label" style="color:var(--sun-d)">Skills, shown not told</div>
+    <h2>What the controls did</h2>
+    <div class="sk">
+      <article class="a">
+        <div class="pair">
+          <div><button type="button" data-open="22"><img src="img/p22.jpg" width="1350" height="1800" alt="Waterfall at 1/630 s" loading="lazy"></button><small>Frame 22 · 1/630 s · −1 EV</small></div>
+          <div><button type="button" data-open="23"><img src="img/p23.jpg" width="1350" height="1800" alt="Waterfall at 1/279 s" loading="lazy"></button><small>Frame 23 · 1/279 s · −1 EV</small></div>
+        </div>
+        <h3>Same water, two shutter speeds</h3>
+        <p>Both frames are at −1 EV. The slower 1/279 s gives the fall more time to blur into threads; 1/630 s keeps it choppier.</p>
+      </article>
+      <article class="b">
+        <div class="pair">
+          <div><button type="button" data-open="30"><img src="img/p30.jpg" width="1800" height="1350" alt="Hazy sky at EV 0" loading="lazy"></button><small>Frame 30 · EV 0</small></div>
+          <div><button type="button" data-open="54"><img src="img/p54.jpg" width="1350" height="1800" alt="Silhouette at −⅓ EV" loading="lazy"></button><small>Frame 54 · −⅓ EV</small></div>
+        </div>
+        <h3>When the sky wins</h3>
+        <p>At EV 0 the sky in frame 30 goes to white. A small −⅓ EV in frame 54 keeps the cloud and lets the ridge fall to silhouette.</p>
+      </article>
+      <article class="c one">
+        <button type="button" data-open="28"><img src="img/p28.jpg" width="1800" height="1350" alt="Dawn river, blurred at 1/17 s, ISO 500" loading="lazy"></button>
+        <h3>What low light costs</h3>
+        <p>Frame 28, shot at 06:00, is the slowest and highest-ISO frame of the set: 1/17 s at ISO 500. At that speed the whole frame blurs from movement, and grain shows in the shadows.</p>
+      </article>
+      <article class="d">
+        <div class="pair">
+          <div><button type="button" data-open="12"><img src="img/p12.jpg" width="1350" height="1800" alt="Low contrast road" loading="lazy"></button><small>Frame 12 · low contrast</small></div>
+          <div><button type="button" data-open="26"><img src="img/p26.jpg" width="1800" height="1350" alt="High contrast cloud and mountains" loading="lazy"></button><small>Frame 26 · high contrast</small></div>
+        </div>
+        <h3>Flat light, hard light</h3>
+        <p>Midday haze flattens frame 12. Sun behind cloud splits frame 26 into glowing highlights and dark mountainside.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="reflect" id="reflect">
+  <div class="wrap">
+    <div>
+      <div class="label" style="color:var(--sun-d)">Self-evaluation</div>
+      <h2>What worked, what didn't</h2>
+      <h3>What worked</h3>
+      <p>The backlit frames. <button class="ref" type="button" data-open="46">46</button>, <button class="ref" type="button" data-open="50">50</button> and <button class="ref" type="button" data-open="54">54</button> make the sun the subject and let the ridge fall to silhouette. <button class="ref" type="button" data-open="90">90</button> is the cleanest frame: sky, snow ridge, one bird. The −1 EV frames in chapters II and III kept their skies blue.</p>
+      <h3>What I'd fix</h3>
+      <p>Too many frames have something in the way: a dashboard (<button class="ref" type="button" data-open="8">8</button>, <button class="ref" type="button" data-open="9">9</button>), a wing mirror (<button class="ref" type="button" data-open="18">18</button>, <button class="ref" type="button" data-open="21">21</button>), wires across the sky (<button class="ref" type="button" data-open="13">13</button>, <button class="ref" type="button" data-open="49">49</button>, <button class="ref" type="button" data-open="82">82</button>). The blue-hour shadows in <button class="ref" type="button" data-open="35">35</button>, <button class="ref" type="button" data-open="36">36</button> and <button class="ref" type="button" data-open="43">43</button> are heavy, and <button class="ref" type="button" data-open="29">29</button> and <button class="ref" type="button" data-open="30">30</button> lose the sky completely. Almost everything is landscape or sky; people only appear at the edges (<button class="ref" type="button" data-open="38">38</button>, <button class="ref" type="button" data-open="68">68</button>).</p>
+    </div>
+    <aside class="note" aria-label="Goals for the next shoot">
+      <h3>Next shoot</h3>
+      <ol>
+        <li>Shoot each scene at −1, 0 and +1 EV, then compare.</li>
+        <li>Try a slower shutter on purpose for moving water.</li>
+        <li>Shoot from outside the car, not through the windscreen.</li>
+        <li>Make one person the subject.</li>
+        <li>Check the corners for wires and mirrors before pressing.</li>
+      </ol>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="big">Medhansh Negi<br>Class 9D</div>
+    <small>Photography portfolio · October 2026<br>All 93 photographs by Medhansh Negi</small>
+  </div>
+</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" type="button" aria-label="Close">×</button>
+  <button class="pv" type="button" aria-label="Previous photo">‹</button>
+  <button class="nx" type="button" aria-label="Next photo">›</button>
+  <div class="stage"><img id="lbimg" alt=""></div>
+  <div class="cap"><span class="no" id="lbno"></span><span class="chips" id="lbchips"></span><p id="lbp"></p></div>
+</div>
+
+<script>
+(function(){
+  var DATA = [{"n": 1, "et": 0.00228310502283105, "iso": 125, "c": "sun"}, {"n": 2, "et": 0.0006993006993006993, "iso": 125, "c": "sun"}, {"n": 3, "et": 0.0006688963210702341, "iso": 125, "c": "sun"}, {"n": 4, "et": 0.0008326394671107411, "iso": 125, "c": "sun"}, {"n": 5, "et": 0.0015527950310559005, "iso": 100, "c": "sun"}, {"n": 6, "et": 0.00023646252069047056, "iso": 100, "c": "sky"}, {"n": 7, "et": 0.000427715996578272, "iso": 100, "c": "sky"}, {"n": 8, "et": 0.0006188118811881188, "iso": 100, "c": "sky"}, {"n": 9, "et": 0.0003803727653100038, "iso": 100, "c": "sky"}, {"n": 10, "et": 0.0005927682276229994, "iso": 100, "c": "sky"}, {"n": 11, "et": 0.0010235414534288639, "iso": 125, "c": "sky"}, {"n": 12, "et": 0.0012970168612191958, "iso": 100, "c": "sky"}, {"n": 13, "et": 0.0010857763300760044, "iso": 125, "c": "sky"}, {"n": 14, "et": 0.00088261253309797, "iso": 100, "c": "sky"}, {"n": 15, "et": 0.001152073732718894, "iso": 100, "c": "sky"}, {"n": 16, "et": 0.0009363295880149813, "iso": 100, "c": "sky"}, {"n": 17, "et": 0.0009643201542912247, "iso": 125, "c": "sky"}, {"n": 18, "et": 0.0013966480446927375, "iso": 125, "c": "sky"}, {"n": 19, "et": 0.0009225092250922509, "iso": 125, "c": "sky"}, {"n": 20, "et": 0.0010582010582010583, "iso": 125, "c": "sky"}, {"n": 21, "et": 0.0006215040397762585, "iso": 125, "c": "sky"}, {"n": 22, "et": 0.0015873015873015873, "iso": 100, "c": "ember"}, {"n": 23, "et": 0.0035842293906810036, "iso": 100, "c": "ember"}, {"n": 24, "et": 0.0004219409282700422, "iso": 100, "c": "ember"}, {"n": 25, "et": 0.0005149330587023687, "iso": 100, "c": "ember"}, {"n": 26, "et": 0.0026595744680851063, "iso": 100, "c": "ember"}, {"n": 27, "et": 0.0009514747859181732, "iso": 100, "c": "ember"}, {"n": 28, "et": 0.058823529411764705, "iso": 500, "c": "navy"}, {"n": 29, "et": 0.01, "iso": 250, "c": "navy"}, {"n": 30, "et": 0.01, "iso": 100, "c": "navy"}, {"n": 31, "et": 0.005494505494505495, "iso": 100, "c": "navy"}, {"n": 32, "et": 0.0016233766233766235, "iso": 100, "c": "navy"}, {"n": 33, "et": 0.001893939393939394, "iso": 100, "c": "navy"}, {"n": 34, "et": 0.005714285714285714, "iso": 100, "c": "navy"}, {"n": 35, "et": 0.0017730496453900709, "iso": 125, "c": "navy"}, {"n": 36, "et": 0.0017241379310344827, "iso": 125, "c": "navy"}, {"n": 37, "et": 0.0018018018018018018, "iso": 100, "c": "navy"}, {"n": 38, "et": 0.001226993865030675, "iso": 125, "c": "navy"}, {"n": 39, "et": 0.0018018018018018018, "iso": 100, "c": "navy"}, {"n": 40, "et": 0.00205761316872428, "iso": 100, "c": "navy"}, {"n": 41, "et": 0.0015082956259426848, "iso": 125, "c": "navy"}, {"n": 42, "et": 0.0007757951900698216, "iso": 100, "c": "navy"}, {"n": 43, "et": 0.002150537634408602, "iso": 100, "c": "navy"}, {"n": 44, "et": 0.0017730496453900709, "iso": 125, "c": "navy"}, {"n": 45, "et": 0.0009398496240601503, "iso": 100, "c": "navy"}, {"n": 46, "et": 0.0009823182711198428, "iso": 125, "c": "navy"}, {"n": 47, "et": 0.01, "iso": 250, "c": "sun"}, {"n": 48, "et": 0.0005770340450086555, "iso": 125, "c": "sun"}, {"n": 49, "et": 0.0007874015748031496, "iso": 125, "c": "sun"}, {"n": 50, "et": 0.00031486146095717883, "iso": 125, "c": "sun"}, {"n": 51, "et": 0.0011467889908256881, "iso": 100, "c": "sun"}, {"n": 52, "et": 0.0012406947890818859, "iso": 100, "c": "sun"}, {"n": 53, "et": 0.0019342359767891683, "iso": 100, "c": "sun"}, {"n": 54, "et": 0.0002829654782116582, "iso": 100, "c": "sun"}, {"n": 55, "et": 0.0004904364884747426, "iso": 125, "c": "sun"}, {"n": 56, "et": 0.000649772579597141, "iso": 100, "c": "sun"}, {"n": 57, "et": 0.0008230452674897119, "iso": 125, "c": "sun"}, {"n": 58, "et": 0.0007117437722419929, "iso": 125, "c": "sun"}, {"n": 59, "et": 0.0023148148148148147, "iso": 125, "c": "pine"}, {"n": 60, "et": 0.0038314176245210726, "iso": 100, "c": "pine"}, {"n": 61, "et": 0.0004170141784820684, "iso": 125, "c": "pine"}, {"n": 62, "et": 0.0002675943270002676, "iso": 125, "c": "pine"}, {"n": 63, "et": 0.00019623233908948196, "iso": 125, "c": "pine"}, {"n": 64, "et": 0.0006591957811470006, "iso": 125, "c": "pine"}, {"n": 65, "et": 0.0005359056806002144, "iso": 125, "c": "pine"}, {"n": 66, "et": 0.00024857071836937607, "iso": 125, "c": "pine"}, {"n": 67, "et": 0.0006788866259334691, "iso": 125, "c": "pine"}, {"n": 68, "et": 0.00029682398337785694, "iso": 125, "c": "pine"}, {"n": 69, "et": 0.0008230452674897119, "iso": 125, "c": "pine"}, {"n": 70, "et": 0.0002068680182043856, "iso": 125, "c": "pine"}, {"n": 71, "et": 0.0017730496453900709, "iso": 125, "c": "sky"}, {"n": 72, "et": 0.0022172949002217295, "iso": 100, "c": "sky"}, {"n": 73, "et": 0.0004108463434675431, "iso": 125, "c": "sky"}, {"n": 74, "et": 0.0017730496453900709, "iso": 125, "c": "sky"}, {"n": 75, "et": 0.00023430178069353328, "iso": 100, "c": "sky"}, {"n": 76, "et": 0.0012626262626262627, "iso": 100, "c": "sky"}, {"n": 77, "et": 0.0003705075954057058, "iso": 125, "c": "sky"}, {"n": 78, "et": 0.00034411562284927734, "iso": 125, "c": "sky"}, {"n": 79, "et": 0.0004761904761904762, "iso": 125, "c": "sky"}, {"n": 80, "et": 0.0006788866259334691, "iso": 125, "c": "sky"}, {"n": 81, "et": 0.0015313935681470138, "iso": 100, "c": "sky"}, {"n": 82, "et": 0.0002915451895043732, "iso": 125, "c": "sky"}, {"n": 83, "et": 0.00199203187250996, "iso": 125, "c": "sky"}, {"n": 84, "et": 0.0007968127490039841, "iso": 125, "c": "sky"}, {"n": 85, "et": 0.00045433893684688776, "iso": 125, "c": "sky"}, {"n": 86, "et": 0.0017482517482517483, "iso": 100, "c": "sky"}, {"n": 87, "et": 0.0005858230814294083, "iso": 125, "c": "sky"}, {"n": 88, "et": 0.0005359056806002144, "iso": 125, "c": "sky"}, {"n": 89, "et": 0.0037313432835820895, "iso": 100, "c": "sky"}, {"n": 90, "et": 0.00035435861091424523, "iso": 125, "c": "ember"}, {"n": 91, "et": 0.00034916201117318437, "iso": 125, "c": "ember"}, {"n": 92, "et": 0.0003291639236339697, "iso": 125, "c": "ember"}, {"n": 93, "et": 0.00014386419220256078, "iso": 125, "c": "ember"}];
+  var COLORS = {sun:"#F2A93B", sky:"#4F8FC6", ember:"#DE5529", navy:"#16213D", pine:"#2E5E4E"};
+  var LABEL = {}; // filled from DOM captions
+
+  // ---------- shutter ruler ----------
+  var svg = document.getElementById("ruler"), NS = "http://www.w3.org/2000/svg";
+  var L = 40, R = 960, lo = Math.log(15), hi = Math.log(8000), axisY = 190;
+  function X(den){ return L + (Math.log(den) - lo) / (hi - lo) * (R - L); }
+  function el(t, a){ var e = document.createElementNS(NS, t); for (var k in a) e.setAttribute(k, a[k]); return e; }
+  svg.appendChild(el("line", {x1:L-10, x2:R+10, y1:axisY, y2:axisY, stroke:"#1C2742", "stroke-width":2}));
+  [15,30,60,125,250,500,1000,2000,4000,8000].forEach(function(d){
+    svg.appendChild(el("line", {x1:X(d), x2:X(d), y1:axisY, y2:axisY+8, stroke:"#1C2742", "stroke-width":2}));
+    var t = el("text", {x:X(d), y:axisY+24, "text-anchor":"middle"}); t.textContent = "1/" + d; svg.appendChild(t);
+  });
+  var lt = el("text", {x:L-10, y:axisY+46}); lt.textContent = "← slower, more light and blur"; svg.appendChild(lt);
+  var rt = el("text", {x:R+10, y:axisY+46, "text-anchor":"end"}); rt.textContent = "faster, freezes motion →"; svg.appendChild(rt);
+  var items = DATA.map(function(d){ return {n:d.n, den:1/d.et, iso:d.iso, c:d.c}; }).sort(function(a,b){ return a.den - b.den; });
+  var levels = [], rad = 7.5;
+  items.forEach(function(it){
+    var x = X(it.den), lvl = 0;
+    while (levels[lvl] !== undefined && x - levels[lvl] < rad*2 + 1.5) lvl++;
+    levels[lvl] = x;
+    var cy = axisY - 14 - lvl * (rad*2 + 1.5);
+    var hollow = it.iso > 125;
+    var c = el("circle", {cx:x, cy:cy, r:rad, "class":"dot", fill: hollow ? "#F4EDDC" : COLORS[it.c], tabindex:0, role:"button", "aria-label":"Frame " + it.n});
+    if (hollow) c.setAttribute("stroke-width", 3);
+    var tt = el("title", {}); tt.textContent = "Frame " + it.n + " · 1/" + Math.round(it.den) + " s · ISO " + it.iso; c.appendChild(tt);
+    c.addEventListener("click", function(){ openLb(it.n); });
+    c.addEventListener("keydown", function(e){ if (e.key === "Enter" || e.key === " "){ e.preventDefault(); openLb(it.n); } });
+    svg.appendChild(c);
+  });
+
+  // ---------- lightbox ----------
+  var lb = document.getElementById("lb"), lbimg = document.getElementById("lbimg");
+  var cur = 1, TOTAL = 93, lastFocus = null;
+  function figFor(n){ return document.querySelector('.shot[data-n="' + n + '"]'); }
+  function openLb(n){
+    cur = n; var f = figFor(n);
+    lbimg.src = "img/p" + (n < 10 ? "0" : "") + n + ".jpg";
+    if (f){
+      lbimg.alt = f.querySelector("img").alt;
+      document.getElementById("lbno").textContent = f.querySelector(".no").textContent;
+      document.getElementById("lbchips").textContent = f.querySelector(".chips").textContent;
+      document.getElementById("lbp").textContent = f.querySelector("p").textContent;
+    }
+    if (!lb.classList.contains("open")){ lastFocus = document.activeElement; lb.classList.add("open"); document.body.style.overflow = "hidden"; lb.querySelector(".x").focus(); }
+  }
+  function closeLb(){ lb.classList.remove("open"); document.body.style.overflow = ""; if (lastFocus) lastFocus.focus(); }
+  function step(d){ openLb(((cur - 1 + d + TOTAL) % TOTAL) + 1); }
+  lb.querySelector(".x").addEventListener("click", closeLb);
+  lb.querySelector(".pv").addEventListener("click", function(){ step(-1); });
+  lb.querySelector(".nx").addEventListener("click", function(){ step(1); });
+  lb.addEventListener("click", function(e){ if (e.target === lb || e.target.classList.contains("stage")) closeLb(); });
+  document.addEventListener("keydown", function(e){
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") closeLb();
+    else if (e.key === "ArrowLeft") step(-1);
+    else if (e.key === "ArrowRight") step(1);
+  });
+  document.querySelectorAll(".shot .frame").forEach(function(b){
+    b.addEventListener("click", function(){ openLb(+b.closest(".shot").dataset.n); });
+  });
+  document.querySelectorAll("[data-open]").forEach(function(b){
+    b.addEventListener("click", function(){ openLb(+b.dataset.open); });
+  });
+})();
+</script>
+</body>
+</html>
